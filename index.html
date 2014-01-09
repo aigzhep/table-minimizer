@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mintable by aigzhep</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Mintable</h1>
+        <p class="header">jQuery plugin,which allows to minimize a long table down to integer row number.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/aigzhep/minTable/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/aigzhep/minTable/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/aigzhep/minTable">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/aigzhep">aigzhep</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="mintable" class="anchor" href="#mintable"><span class="octicon octicon-link"></span></a>minTable</h1>
+
+<p><strong>ENG:</strong></p>
+
+<h3>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h3>
+
+<p>It's neccessary to use jQuery version 1.6.0 and higher</p>
+
+<h3>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h3>
+
+<p>This plugin allows to minimize a long table down to integer row number and to get short table view without any partial view of the last row.
+To make a short-view of a table, you need to apply <code>minimize()</code> function to your table(-s):</p>
+
+<pre>$(&lt;identifier&gt;).minimize({<br>  min: 0,<br>  buttonText: ["Show", "Hide"],<br>  fixHeader: false,<br>  initialView: "short"<br>});</pre>
+
+<h3>
+<a name="parameters-of-the-minimize-function" class="anchor" href="#parameters-of-the-minimize-function"><span class="octicon octicon-link"></span></a>Parameters of the <code>minimize()</code> function</h3>
+
+<table><tbody>
+<tr>
+<th>Property</th>
+      <th width="100">Type</th>
+      <th width="110">Default meaning</th>
+      <th>Description</th>
+    </tr>
+<tr>
+<td>min</td>
+      <td>integer</td>
+      <td>0</td>
+      <td>An amount of rows you want to show</td>
+    </tr>
+<tr>
+<td>buttonText</td>
+      <td>array</td>
+      <td>["Show", "Hide"]</td>
+      <td>A text inside a control button (the button is created automatically)</td>
+    </tr>
+<tr>
+<td>initialView</td>
+      <td>string</td>
+      <td>"short"</td>
+      <td>An initial state of your table, <code>short</code> or <code>full</code>
+</td>
+    </tr>
+<tr>
+<td>fixHeader</td>
+      <td>boolean</td>
+      <td>false</td>
+      <td>Fixation of <code>&lt;thead&gt;</code> table element, if it exists: <code>true</code> when it's needed to be always fully shown, <code>false</code> when it can be partially hidden</td>
+    </tr>
+</tbody></table><p><strong>Important.</strong> Don't forget to add css-file <code>minTable-base.css</code> into your code: it has basic styles to set more accurate view of final tables.
+<br><br><strong>РУ:</strong></p>
+
+<h3>
+<a name="%D0%A2%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" class="anchor" href="#%D0%A2%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F"><span class="octicon octicon-link"></span></a>Требования</h3>
+
+<p>Необходимо использовать библиотеку jQuery версии 1.6.0 и выше</p>
+
+<h3>
+<a name="%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" class="anchor" href="#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5"><span class="octicon octicon-link"></span></a>Описание</h3>
+
+<p>Данный плагин позволяет сворачивать длинные таблицы до целого числа строк. При этом в таком свернутом состоянии строки показываются полностью, без "обрезания" последней строки по высоте.
+<br>Для этого вам нужно привязать функцию <code>minimize()</code> к вашей(-им) таблице(-ам):</p>
+
+<pre>$(&lt;identifier&gt;).minimize({<br>  min: 0,<br>  buttonText: ["Show", "Hide"],<br>  fixHeader: false,<br>  initialView: "short"<br>});</pre>
+
+<h3>
+<a name="%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-minimize" class="anchor" href="#%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-minimize"><span class="octicon octicon-link"></span></a>Параметры функции <code>minimize()</code>:</h3>
+
+<table><tbody>
+<tr>
+<th>Свойство</th>
+      <th width="100">Тип</th>
+      <th width="110">Значение по умолчанию</th>
+      <th>Описание</th>
+    </tr>
+<tr>
+<td>min</td>
+      <td>целое число</td>
+      <td>0</td>
+      <td>Количество видимых строк</td>
+    </tr>
+<tr>
+<td>buttonText</td>
+      <td>массив</td>
+      <td>["Show", "Hide"]</td>
+      <td>Текст внутри кнопки управления (кнопка генерируется автоматически)</td>
+    </tr>
+<tr>
+<td>initialView</td>
+        <td>строка</td>
+        <td>"short"</td>
+        <td>Начальный вид таблицы, <code>short</code> (свернута) или <code>full</code>(полностью показана)</td>
+    </tr>
+<tr>
+<td>fixHeader</td>
+        <td>логический</td>
+        <td>false</td>
+        <td>Фиксация элемента <code>&lt;thead&gt;</code> таблицы, если таковой есть: <code>true</code> - он будет видимым всегда, <code>false</code> - строки из него можно будет скрывать.</td>
+    </tr>
+</tbody></table><p><strong>Важно.</strong> Не забудьте подключить в вашем коде css-файл <code>minTable-base.css</code>: в нем прописаны основные стили, которые помогут привести получившиеся таблицы к более аккуратному виду.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46984379-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
