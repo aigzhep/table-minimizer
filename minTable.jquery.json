@@ -1,6 +1,6 @@
 {
     "name": "minTable",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "title": "jQuery minTable",
     "author": {
         "name": "Aygul Ilimbaev",
@@ -15,16 +15,15 @@
     "dependencies": {
         "jquery": ">=1.6"
     },
-    "description": "jQuery plugin,which allows to minimize a long table down to integer row number",
+    "description": "jQuery plugin,which allows to minimize (collapse, hide) a long table down to integer row number",
     "keywords": [
-        "table",
-        "slidable",
+        "collapse",
         "minimize",
         "integer",
         "hide",
-        "rows"
+        "table"
     ],
-    "homepage": "https://github.com/aigzhep/minTable",
+    "homepage": "https://github.com/aigzhep/minTable, http://aigzhep.github.io/minTable/",
     "docs": "https://github.com/aigzhep/minTable#readme",
     "download": "https://github.com/aigzhep/minTable/archive/master.zip"
 }
