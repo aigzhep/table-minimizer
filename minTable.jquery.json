@@ -1,6 +1,6 @@
 {
     "name": "minTable",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "title": "jQuery minTable",
     "author": {
         "name": "Aygul Ilimbaev",
@@ -23,7 +23,7 @@
         "hide",
         "table"
     ],
-    "homepage": "https://github.com/aigzhep/minTable, http://aigzhep.github.io/minTable/",
+    "homepage": "https://github.com/aigzhep/minTable",
     "docs": "https://github.com/aigzhep/minTable#readme",
     "download": "https://github.com/aigzhep/minTable/archive/master.zip"
 }
